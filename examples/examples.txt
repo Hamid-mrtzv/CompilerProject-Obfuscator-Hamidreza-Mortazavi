@@ -1,0 +1,61 @@
+
+### 1. Project Doc's Example ###
+
+int sum(int a, int b) {
+    int result = a + b;
+    return result;
+}
+int main() {
+    int x = 3;
+    int y = 4;
+    int total = sum(x, y);
+    printf("%d\n", total);
+    return 0;
+}
+
+### 2. Simple Arithmetic Function ###
+
+int multiply(int a, int b) {
+    int result = a * b;
+    return result;
+}
+
+int main() {
+    int x = 5;
+    int y = 10;
+    int result = multiply(x, y);
+    printf("%d\n", result);
+    return 0;
+}
+
+### 3. Factorial (Recursion) ###
+
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    int num = 6;
+    int fact = factorial(num);
+    printf("%d", fact);
+    return 0;
+}
+
+### 4. Loop And Conditional ###
+
+int main() {
+    int i = 0;
+    int sum = 0;
+    while (i < 5) {
+        if (i % 2 == 0) {
+            sum = sum + i;
+        }
+        i = i + 1;
+    }
+    printf("%d\n", sum);
+    return 0;
+}
